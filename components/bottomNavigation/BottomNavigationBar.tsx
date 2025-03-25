@@ -1,17 +1,17 @@
 import React from 'react';
 import { BottomNavigation } from 'react-native-paper';
-import Lendo from '../screens/lendo';
-import Lidos from '../screens/lidos';
-import QueroLer from '../screens/QueroLer';
+import Lendo from '../screens/lendo/Lendo';
+import Lidos from '../screens/lidos/Lidos';
+import QueroLer from '../screens/queroLer/QueroLer';
 
 
 const BottomNavigationBar: React.FC = () => {
   const [index, setIndex] = React.useState(0);
 
   const [routes] = React.useState([
+    { key: 'queroLer', title: 'Quero ler', icon: 'lightbulb' },
     { key: 'lendo', title: 'Lendo', icon: 'book-open-page-variant' },
     { key: 'lidos', title: 'Lidos', icon: 'check' },
-    { key: 'queroLer', title: 'Quero ler', icon: 'lightbulb' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
