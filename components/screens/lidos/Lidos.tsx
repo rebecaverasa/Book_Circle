@@ -1,16 +1,5 @@
-import React from 'react';
-import { View } from 'react-native';
-import { Button } from 'react-native-paper';
-import InputWithButton from '../../inputWithButton/InputWithButton';
-import { Titulo } from '../../styles';
+import BooksScreen from '../../BooksScreen';
 
-const Lidos: React.FC = () => {
-  return (
-    <View>
-      <Titulo variant='headlineSmall'>Lidos</Titulo>
-      <InputWithButton />
-    </View>
-  );
-};
-
-export default Lidos;
+export default function Lendo() {
+  return <BooksScreen titulo="Lidos" />;
+}
