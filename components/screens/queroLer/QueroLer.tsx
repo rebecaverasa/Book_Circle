@@ -1,5 +1,5 @@
-import BooksScreen from '../../BooksScreen';
+import BooksScreen from '../booksScreen/BooksScreen';
 
-export default function Lendo() {
-  return <BooksScreen titulo="Quero ler" />;
+export default function QueroLer() {
+  return <BooksScreen titulo="Quero ler" storageKey="@books_list_queroler" />;
 }

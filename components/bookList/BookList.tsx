@@ -1,5 +1,4 @@
-import { View } from 'react-native';
-import { Button, IconButton, List } from 'react-native-paper';
+import { IconButton, List } from 'react-native-paper';
 
 type Props = {
   books: string[];
