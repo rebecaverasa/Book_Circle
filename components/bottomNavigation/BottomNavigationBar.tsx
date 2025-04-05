@@ -1,9 +1,8 @@
 import React from 'react';
 import { BottomNavigation } from 'react-native-paper';
-import Lendo from '../screens/lendo/Lendo';
-import Lidos from '../screens/lidos/Lidos';
-import QueroLer from '../screens/queroLer/QueroLer';
-
+import Lendo from '../Lendo';
+import QueroLer from '../QueroLer';
+import Lidos from '../Lidos';
 
 const BottomNavigationBar: React.FC = () => {
   const [index, setIndex] = React.useState(0);
