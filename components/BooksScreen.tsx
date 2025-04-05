@@ -9,7 +9,8 @@ type Props = {
 };
 
 const BooksScreen: React.FC<Props> = ({ titulo }) => {
-  const { bookTitle, setBookTitle, bookList, adicionarLivro } = useBooksList();
+  const { bookTitle, setBookTitle, bookList, addBook, removeBook } =
+    useBooksList();
 
   return (
     <View>
@@ -17,9 +18,9 @@ const BooksScreen: React.FC<Props> = ({ titulo }) => {
       <InputWithButton
         bookTitle={bookTitle}
         setBookTitle={setBookTitle}
-        onAdd={adicionarLivro}
+        onAdd={addBook}
       />
-      <BookList books={bookList} />
+      <BookList books={bookList} removeBook={removeBook} />
     </View>
   );
 };
